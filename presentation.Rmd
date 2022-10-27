@@ -1,6 +1,6 @@
 ---
 title: "IDS Final Project Proposal"
-author: "Team name <br> Bobby, Nicholas, Jocelyn, Tony and Ronan"
+author: "Team name <br> Bobby, Nicholas, Jocelyn, Xuze Chen and Ronan"
 institute: "University of Edinburgh"
 date: "`r Sys.Date()`"
 output:
@@ -45,7 +45,25 @@ style_xaringan(
 
 class: center, middle
 
-## A statement of the overall goal / research question
+## Objective
+
+--
+
+- Objective 1 (The first week):complete data screening, to summarize and analyze the data 
+
+--
+
+- Objective 2 (the second week):visualize the data across ggplot2 and anything we learned
+
+--
+
+- Objective 3 (the third and fourth weeks):make our hypotheses and conclusions based on the existing data and complete the presentation and write up
+
+--
+
+- Reach the final aim,how to build the best Ferris wheel
+
+
 
 ---
 
