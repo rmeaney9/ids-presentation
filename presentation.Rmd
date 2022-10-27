@@ -21,6 +21,12 @@ library(tidyverse)
 library(palmerpenguins)
 library(knitr)
 library(xaringanthemer)
+
+
+tuesdata <- tidytuesdayR::tt_load(2022, week = 32)
+
+wheels <- tuesdata$wheels
+
 ```
 
 ```{r setup, include=FALSE}
