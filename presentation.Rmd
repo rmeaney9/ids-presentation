@@ -1,7 +1,6 @@
 ---
-title: "Presentation title"
-subtitle: "Presentation subtitle (if any)"
-author: "Team name <br> Names of team members"
+title: "IDS Final Project Proposal"
+author: "Team name <br> Bobby, Nicholas, Jocelyn, Tony and Ronan"
 institute: "University of Edinburgh"
 date: "`r Sys.Date()`"
 output:
