@@ -142,17 +142,14 @@ print(ave)
 # More examples of some information you can gather from the data frame
 
 ```{r recode-species, echo = FALSE}
-# In this chunk I'm doing a bunch of analysis that I don't want to present 
-# in my slides. But I need the resulting data frame for a plot I want to present.
-iris_modified <- iris %>%
-  mutate(Species = fct_other(Species, keep = "setosa"))
+
 ```
 
-```{r plot-iris, echo = FALSE}
+```{r warning=FALSE, out.width="50%", fig.width= 6, echo=FALSE}
 # Code hidden with echo = FALSE
 # Uses modified iris dataset from previous chunk
 # Play around with height and width until you're happy with the look
-ggplot(data = iris_modified, mapping = aes(x = Sepal.Width, y = Sepal.Length, color = Species)) +
+ggplot(data = wheels, mapping = aes(x = height, y = diameter, color = country)) +
   geom_point() + 
   theme_minimal() # theme options: https://ggplot2.tidyverse.org/reference/ggtheme.html
 ```
