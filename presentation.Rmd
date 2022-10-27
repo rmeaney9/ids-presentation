@@ -15,7 +15,7 @@ output:
 ---
 
 ```{r load-packages, include = FALSE}
-# Add any additional packages you need to this chunk
+
 library(tidyverse)
 library(palmerpenguins)
 library(knitr)
@@ -42,7 +42,13 @@ style_xaringan(
   title_slide_background_image = "img/confetti.jpg"
 )
 ```
+--
 
+#About this data frame
+
+The data frame we have chosen is wheels.csv which is a data frame of information gathered from multiple different ferris wheels across the world.
+
+--
 class: center, middle
 
 ## Objective
@@ -61,12 +67,15 @@ class: center, middle
 
 --
 
-- Reach the final aim,how to build the best Ferris wheel
+- Reach the final aim, how to build the best Ferris wheel
 
 
 
 ---
 
+
+
+---
 class: inverse, center, middle
 
 # Section title
@@ -119,17 +128,18 @@ or text in two columns $^*$
 
 ---
 
-# Code
+# Example of some information you can gather from the data frame
 
 ```{r boring-analysis}
-# a boring analysis
-ave <- mean(cars$dist)
+# This is the average duration of a ferris wheel ride using the variables from the data frame
+ave <- round(mean(wheels$ride_duration_minutes, na.rm = TRUE))
+
 print(ave)
 ```
 
 ---
 
-# Plots
+# More examples of some information you can gather from the data frame
 
 ```{r recode-species, echo = FALSE}
 # In this chunk I'm doing a bunch of analysis that I don't want to present 
@@ -152,16 +162,20 @@ ggplot(data = iris_modified, mapping = aes(x = Sepal.Width, y = Sepal.Length, co
 ## Plot and text
 
 .pull-left[
-- Some text
-- goes here
+- Here is a bar graph of all the country's in the data frame and how many ferris wheels are in each of them.
+
+- You can also see there are 73 entries with in this data frame.
+
 ]
 .pull-right[
-```{r warning=FALSE, out.width="100%", fig.width=4, echo=FALSE}
+```{r warning=FALSE, out.width="200%", fig.width=6, echo=FALSE}
 # see how I changed out.width and fig.width from defaults
 # to make the figure bigger
-ggplot(penguins, aes(x = bill_length_mm, y = species, color = species)) +
-  geom_boxplot() +
-  theme_minimal()
+ggplot(wheels, aes(x = country)) +
+  geom_bar(binwidth = 2000) +
+  coord_flip()
+
+count(wheels)
 ```
 ]
 

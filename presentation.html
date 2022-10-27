@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Presentation title</title>
+    <title>IDS Final Project Proposal</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Team name   Names of team members" />
+    <meta name="author" content="Team name   Bobby, Nicholas, Jocelyn, Xuze Chen and Ronan" />
     <meta name="date" content="2022-10-27" />
     <script src="libs/header-attrs-2.16/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
@@ -13,13 +13,10 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# Presentation title
-]
-.subtitle[
-## Presentation subtitle (if any)
+# IDS Final Project Proposal
 ]
 .author[
-### Team name <br> Names of team members
+### Team name <br> Bobby, Nicholas, Jocelyn, Xuze Chen and Ronan
 ]
 .institute[
 ### University of Edinburgh
@@ -38,13 +35,40 @@ class: center, middle, inverse, title-slide
 
 
 
+--
 
+#About this data frame
+
+The data frame we have chosen is wheels.csv which is a data frame of information gathered from multiple different ferris wheels across the world.
+
+--
 class: center, middle
 
-## A statement of the overall goal / research question
+## Objective
+
+--
+
+- Objective 1 (The first week):complete data screening, to summarize and analyze the data 
+
+--
+
+- Objective 2 (the second week):visualize the data across ggplot2 and anything we learned
+
+--
+
+- Objective 3 (the third and fourth weeks):make our hypotheses and conclusions based on the existing data and complete the presentation and write up
+
+--
+
+- Reach the final aim,how to build the best Ferris wheel
+
+
 
 ---
 
+
+
+---
 class: inverse, center, middle
 
 # Section title
@@ -97,22 +121,23 @@ or text in two columns `\(^*\)`
 
 ---
 
-# Code
+# Example of some information you can gather from the data frame
 
 
 ```r
-# a boring analysis
-ave &lt;- mean(cars$dist)
+# This is the average duration of a ferris wheel ride using the variables from the data frame
+ave &lt;- round(mean(wheels$ride_duration_minutes, na.rm = TRUE))
+
 print(ave)
 ```
 
 ```
-## [1] 42.98
+## [1] 18
 ```
 
 ---
 
-# Plots
+# More examples of some information you can gather from the data frame
 
 
 
@@ -123,11 +148,20 @@ print(ave)
 ## Plot and text
 
 .pull-left[
-- Some text
-- goes here
+- Here is a bar graph of all the country's in the data frame and how many ferris wheels are in each of them.
+
+- You can also see there are 73 entries with in this data frame.
+
 ]
 .pull-right[
-&lt;img src="presentation_files/figure-html/unnamed-chunk-2-1.png" width="100%" /&gt;
+&lt;img src="presentation_files/figure-html/unnamed-chunk-2-1.png" width="200%" /&gt;
+
+```
+## # A tibble: 1 × 1
+##       n
+##   &lt;int&gt;
+## 1    73
+```
 ]
 
 ---
