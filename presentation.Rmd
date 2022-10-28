@@ -1,5 +1,5 @@
 ---
-title: "IDS Final Project Proposal"
+title: "How to Build the Best Ferris Wheel"
 author: "Team name <br> Bobby, Nicholas, Jocelyn, Xuze Chen and Ronan"
 institute: "University of Edinburgh"
 date: "`r Sys.Date()`"
