@@ -65,7 +65,7 @@ class: center, middle
 
 --
 
-- Reach the final aim, how to build the best Ferris wheel
+- Final objective: Display data on how to build the best Ferris wheel
 
 
 
@@ -79,10 +79,13 @@ class: inverse, center, middle
 
 --
 
-- We are mostly going to use 
+- With the data set provided we are going to construct and compare different Ferris wheels
 
 --
- -
+ - We are going to calculate important information to consider before starting the project
+ 
+ --
+e.g. Breakeven point, average revenue to be expected per day/month/season/year
 
 ---
 class: inverse, center, middle
