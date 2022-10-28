@@ -1,6 +1,6 @@
 ---
 title: "IDS Final Project Proposal"
-author: "Team name <br> Bobby, Nicholas, Jocelyn, Xuze Chen and Ronan"
+author: "Team name <br> Bobby, Nicholas, Yijing Wang, Xuze Chen and Ronan"
 institute: "University of Edinburgh"
 date: "`r Sys.Date()`"
 output:
@@ -143,3 +143,4 @@ count(wheels)
 ```{r iris-table, echo = FALSE}
 kable(head(wheels), format = "html")
 ```
+
