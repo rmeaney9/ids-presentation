@@ -88,10 +88,6 @@ class: inverse, center, middle
 e.g. Breakeven point, average revenue to be expected per day/month/season/year
 
 ---
-class: inverse, center, middle
-
-
----
 
 # Layouts
 
@@ -170,15 +166,3 @@ If you want to generate a table, make sure it is in the HTML format (instead of 
 ```{r iris-table, echo = FALSE}
 kable(head(iris), format = "html")
 ```
----
-
-# Feeling adventurous?
-
-- Want to find out more about `xaringan`? See https://slides.yihui.name/xaringan/#1.
-
-- You are welcomed to use the default styling of the slides. In fact, that's what I expect majority of you will do. You will differentiate yourself with the content of your presentation.
-
-- But some of you might want to play around with slide styling. The 
-`xaringanthemer` provides some solutions for this that: https://pkg.garrickadenbuie.com/xaringanthemer.
-
-- And if you want more bells and whistles, there is also `xaringanExtra`: https://pkg.garrickadenbuie.com/xaringanExtra.
