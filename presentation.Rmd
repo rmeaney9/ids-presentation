@@ -47,7 +47,6 @@ style_xaringan(
 
 The data frame we have chosen is wheels.csv which is a data frame of information gathered from multiple different ferris wheels across the world.
 
-class: center, middle
 
 ## Objective
 
@@ -87,27 +86,7 @@ class: inverse, center, middle
  --
 e.g. Breakeven point, average revenue to be expected per day/month/season/year
 
----
 
-# Layouts
-
-You can use plain text
-
-- or bullet points
-
-.pull-left[
-or text in two columns $^*$
-]
-.pull-right[
-- like
-- this
-]
-
-.footnote[
-[*] And add footnotes
-]
-
----
 
 # Example of some information you can gather from the data frame
 
@@ -137,7 +116,7 @@ ggplot(data = wheels, mapping = aes(x = height, y = diameter, color = country)) 
 
 ---
 
-## Plot and text
+# More examples of some information you can gather from the data frame
 
 .pull-left[
 - Here is a bar graph of all the country's in the data frame and how many ferris wheels are in each of them.
@@ -159,10 +138,8 @@ count(wheels)
 
 ---
 
-# Tables
-
-If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
+# Heres a table of the first few entries in the data frame
 
 ```{r iris-table, echo = FALSE}
-kable(head(iris), format = "html")
+kable(head(wheels), format = "html")
 ```
