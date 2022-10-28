@@ -47,7 +47,8 @@ style_xaringan(
 
 The data frame we have chosen is wheels.csv which is a data frame of information gathered from multiple different ferris wheels across the world.
 
-
+And the question we are going to ask is how to design to most profitable ferris wheel? Along with how to make the most popular ferris wheel? And whether these are the same ferris wheels? As well as what factors caused the ferris wheels to be successful in either way?
+---
 ## Objective
 
 --
@@ -69,8 +70,7 @@ The data frame we have chosen is wheels.csv which is a data frame of information
 
 
 ---
-class: inverse, center, middle
-# Data set
+
 
 ## Data set information
 
